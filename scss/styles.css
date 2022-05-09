@@ -678,6 +678,9 @@ article footer {
 }
 
 @media (min-width: 1100px) {
+  #about {
+    background-position-y: bottom;
+  }
   #projects ul a {
     width: 45%;
   }

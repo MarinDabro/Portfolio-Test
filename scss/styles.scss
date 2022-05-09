@@ -567,6 +567,10 @@ $breakpoint-tablet: 800px;
 
 @media (min-width: 1100px) {
 
+  #about {
+    background-position-y: bottom;
+  }
+
   #projects {
     
     ul {
