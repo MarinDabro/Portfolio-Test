@@ -174,9 +174,6 @@ article {
 
     .showcase {
       width: calc(100% - 3px);
-   /*    display: flex;
-      flex-direction: column;
-      justify-content: space-around; */
       align-items: center;
       margin: 0 auto 15px auto;
       padding: 10px 0;
@@ -188,15 +185,9 @@ article {
         perspective: 1000px;
         width: 305px;
         height: 520px;
-      /*   display: flex;
-        justify-content: center;
-        align-items: center; */
         margin: 15px auto;
 
         .flipper {
-         /*  display: flex;
-          justify-content: center;
-          align-items: center; */
           width: inherit;
           height: inherit;
 
@@ -208,12 +199,7 @@ article {
             /* for firefox 31 */
             transform: rotateY(0deg);
           }
-         /*  .card:first-of-type {
-            background-image: url(../images/sword.png);
-          }
-          .card:nth-of-type(2) {
-            background-image: url(../images/ring.png);
-          } */
+        
           .card, .card-back {
             backface-visibility: hidden;
             position: absolute;
@@ -255,11 +241,6 @@ article {
           background-image: url(../images/ring-back.png);
         }
       }
-      
-     /*  .flipper, .card, .card-back {
-        width: 100%;
-        height: 400px;
-      } */
       
       .flip-container:first-of-type:hover .flipper, .flip-container:first-of-type.hover .flipper {
         transform: rotateY(180deg);
