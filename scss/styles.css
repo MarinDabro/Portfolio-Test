@@ -344,22 +344,6 @@ article #skills ul {
   background-color: rgba(255, 255, 255, 0.159);
 }
 
-article #projects ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 article #projects ul a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,7 +354,6 @@ article #projects ul a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   background-position: center;
   background-size: cover;
   border-radius: 25px;
@@ -380,7 +363,6 @@ article #projects ul a {
 }
 
 article #projects ul a li {
-  width: 100%;
   height: 400px;
   padding: 15px;
   background-color: rgba(34, 34, 34, 0.767);
@@ -398,6 +380,7 @@ article #projects ul a li {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.6em;
+  width: 100%;
 }
 
 article #projects ul a:hover {
@@ -432,7 +415,7 @@ article #projects ul a:nth-of-type(4) {
 }
 
 article #contact {
-  width: 400px;
+  width: 80%;
   margin: auto;
 }
 
@@ -452,7 +435,7 @@ article #contact form label {
 }
 
 article #contact form input, article #contact form textarea, article #contact form button {
-  width: 90%;
+  width: 100%;
   border-radius: 5px;
   margin: 10px auto 20px auto;
   padding: 10px;
@@ -654,6 +637,47 @@ article footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 20px;
+  }
+  #projects ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
+  }
+  #projects ul a {
+    width: 80%;
+    margin: 50px;
+  }
+  #projects ul a li {
+    width: 100%;
+  }
+  #contact {
+    width: 50%;
+  }
+  #contact form {
+    width: 50%;
+    margin: auto;
+  }
+  #contact form #submit {
+    width: 300px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1100px) {
+  #projects ul a {
+    width: 45%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
