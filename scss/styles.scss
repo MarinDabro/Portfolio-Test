@@ -190,6 +190,9 @@ article {
         .flipper {
           width: inherit;
           height: inherit;
+          transition: 0.6s; 
+          transform-style: preserve-3d;
+          position: relative;
 
           .card {
             background-image: url(../images/rose.png);
@@ -250,13 +253,6 @@ article {
       }
       .flip-container:last-of-type:hover .flipper, .flip-container:last-of-type.hover .flipper {
         transform: rotateY(180deg);
-      }
-
-      .flipper {
-        transition: 0.6s; 
-        transform-style: preserve-3d;
-      
-        position: relative;
       }
 
     }
